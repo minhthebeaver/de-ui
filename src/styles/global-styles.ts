@@ -11,8 +11,15 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding-top: ${StyleConstants.NAV_BAR_HEIGHT};
+    /* padding-top: ${StyleConstants.NAV_BAR_HEIGHT}; */
     background-color: ${p => p.theme.background};
+  }
+
+  #root {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
   }
 
   body.fontLoaded {

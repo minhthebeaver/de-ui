@@ -1,9 +1,10 @@
 import { ThemeKeyType } from './slice/types';
 
 /* istanbul ignore next line */
-export const isSystemDark = window?.matchMedia
-  ? window.matchMedia('(prefers-color-scheme: dark)')?.matches
-  : undefined;
+export const isSystemDark = false
+// window?.matchMedia
+//   ? window.matchMedia('(prefers-color-scheme: dark)')?.matches
+//   : undefined;
 
 export function saveTheme(theme: ThemeKeyType) {
   window.localStorage && localStorage.setItem('selectedTheme', theme);
